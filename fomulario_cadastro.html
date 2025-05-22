@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Selecione suas preferências:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="preferencias" value="opcao1"> Opção 1</label>
+                <label><input type="checkbox" name="preferencias" value="opcao2"> Opção 2</label>
+                <label><input type="checkbox" name="preferencias" value="opcao3"> Opção 3</label>
+                <label><input type="checkbox" name="preferencias" value="opcao4"> Opção 4</label>
+                <label><input type="checkbox" name="preferencias" value="opcao5"> Opção 5</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Escolha uma opção:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="opcao" value="opcaoA" required> Opção A</label>
+                <label><input type="radio" name="opcao" value="opcaoB"> Opção B</label>
+            </div>
+        </div>
+        <div class="form-group buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
